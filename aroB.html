@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotoğraf Galerisi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,7 +13,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Anasayfa</a></li>
-                <li><a href="#">Galeri</a></li>
+                <li><a href="gallery.html">Galeri</a></li>
                 <li><a href="#">Hakkımızda</a></li>
                 <li><a href="#">İletişim</a></li>
             </ul>
@@ -20,10 +21,22 @@
     </header>
 
     <section class="gallery">
-        <!-- Fotoğraf Galerisi İçeriği Buraya Gelecek -->
+        <a href="path/to/photo1.jpg" data-caption="Açıklama 1"><img src="path/to/photo1-thumb.jpg" alt="Fotoğraf 1"></a>
+        <a href="path/to/photo2.jpg" data-caption="Açıklama 2"><img src="path/to/photo2-thumb.jpg" alt="Fotoğraf 2"></a>
+        <!-- Diğer fotoğrafları ekleyin -->
     </section>
 
     <footer>
+        <p>&copy; 2024 Fotoğrafçılık Web Sitesi</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.gallery');
+    </script>
+</body>
+</html>
+
         <p>&copy; 2024 Fotoğrafçılık Web Sitesi</p>
     </footer>
 
